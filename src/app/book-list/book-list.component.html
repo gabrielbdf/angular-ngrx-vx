@@ -1,0 +1,12 @@
+<div class="book-item">
+  <p>{{ book.volumeInfo.title }} - {{ book.id }}</p>
+  <span> by {{ book.volumeInfo.authors }}</span>
+  <button (click)="add.emit({bookId: book.id, season: 'summer'})" data-test="add-button">
+    Add to Summer Collection
+  </button>
+  <!--
+  <button (click)="add.emit({bookId: book.id, season: 'winter'})" data-test="add-button">
+    Add to Winter Collection
+  </button>
+  -->
+</div>

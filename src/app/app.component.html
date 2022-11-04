@@ -1,0 +1,34 @@
+<h1>{{ contador }}</h1>
+
+
+<input [(ngModel)]="tempoParaContar" type="number" placeholder="Tempo para contar em segundos" />
+
+<p>
+    Data de Final: {{ tempoFinal }}
+</p>
+
+
+<button (click)="contarTimer(null)">Contar</button>
+
+<!--
+
+<h1 id="titulo">
+    Título do Projeto
+</h1>
+
+<h2>All Books</h2>
+<app-book-list id="book-list" class="book-list" *ngFor="let book of books$ | async" [book]="book" (add)="onAdd($event)">
+</app-book-list>
+
+<hr>
+
+
+<h2>Collection Summer</h2>
+<app-book-collection #collection class="book-collection" [books]="bookCollectionSummer$ | async" (remove)="onRemove($event)">
+</app-book-collection>
+
+<hr />
+<h2>Collection Winter</h2>
+<app-book-collection class="book-collection" [books]="bookCollectionWinter$ | async" (remove)="onRemove($event)">
+</app-book-collection>
+-->
